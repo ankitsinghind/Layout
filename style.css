@@ -1,0 +1,332 @@
+body {
+  background-color: white;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  margin: 0;
+}
+
+.container {
+  padding-left: 50px;
+  margin: auto;
+  overflow: hidden;
+}
+
+#main-header {
+  background-color: coral;
+  color: white;
+}
+
+#navbar {
+  background-color: #333;
+}
+
+#navbar ul {
+  padding: 0%;
+  list-style: none;
+}
+
+#navbar li {
+  display: inline;
+}
+
+#navbar a {
+  color: white;
+  text-decoration: none;
+  padding-right: 30px;
+}
+
+#navbar :hover {
+  color: coral;
+}
+
+#showcase {
+  background-image: url(showcase.jpg);
+  min-height: 300px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#showcase h1 {
+  line-height: 1.6em;
+  font-size: 30px;
+}
+
+#main {
+  float: left;
+  width: 70%;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+#sidebar {
+  float: right;
+  width: 30%;
+  background-color: #333;
+  color: aliceblue;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  grid-gap: 1em;
+  /*grid-auto-rows: 3rem; (Not used as if content more it doesnot adjust)*/
+
+  grid-auto-rows: minmax(100, auto); /*min 100 & max auto*/
+  padding: 1em;
+}
+
+/*gives color to div*/
+
+.grid div {
+  background-color: #333;
+  color: aliceblue;
+  padding: 1em;
+  margin-top: 10px;
+  border-radius: 10px;
+  text-align: center;
+  place-items: center;
+}
+
+img {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  padding: 15px;
+}
+
+/*footer div styles*/
+
+.fcontent {
+  color: white;
+  text-align: center;
+}
+
+.subscribe-form {
+  font-size: 22px;
+  padding: 5px;
+}
+
+.subscribe-btn {
+  background-color: coral;
+  color: white;
+  font-weight: bold;
+  padding: 2px;
+}
+
+.company {
+  color: aliceblue;
+  float: left;
+  width: 25%;
+  min-height: 200px;
+  box-sizing: border-box;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.company ul {
+  padding: 0%;
+  list-style: none;
+}
+
+#company li {
+  display: inline;
+}
+
+.company a {
+  color: white;
+  text-decoration: none;
+}
+
+.gethelp {
+  color: aliceblue;
+  float: left;
+  width: 25%;
+  box-sizing: border-box;
+  min-height: 200px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.gethelp ul {
+  padding: 0%;
+  list-style: none;
+}
+
+#gethelp li {
+  display: inline;
+}
+
+.gethelp a {
+  color: white;
+  text-decoration: none;
+}
+
+.shop {
+  color: aliceblue;
+  float: left;
+  width: 25%;
+  box-sizing: border-box;
+  min-height: 200px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.shop ul {
+  padding: 0%;
+  list-style: none;
+}
+
+#shop li {
+  display: inline;
+}
+
+.shop a {
+  color: white;
+  text-decoration: none;
+}
+
+.follow {
+  color: aliceblue;
+  float: right;
+  width: 25%;
+  box-sizing: border-box;
+  min-height: 200px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.follow i {
+  padding-left: 20px;
+  font-size: 30px;
+}
+
+.iconf {
+  color: aliceblue;
+}
+
+.iconi {
+  color: aliceblue;
+}
+
+.icont {
+  color: aliceblue;
+}
+
+.copyright {
+  font-size: medium;
+  color: aliceblue;
+  text-align: center;
+}
+
+#main-footer {
+  font-size: 14px;
+  background-color: #333;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+#main-footer li :hover {
+  text-decoration: underline;
+}
+
+/*About Us Section Styles*/
+
+#about-us {
+  background: #fff;
+  padding: 40px 0 30px 0;
+}
+.about-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 0 20px;
+}
+.about-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.about-desc {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.about-mission-card {
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px grey;
+  padding: 25px 30px;
+  margin-bottom: 35px;
+  text-align: center;
+}
+.team-title {
+  font-size: 1.7rem;
+  color: #222;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.team-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.team-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px grey;
+  padding: 25px 20px 18px 20px;
+  width: 220px;
+  text-align: center;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team-card:hover {
+  transform: translateY(-7px) scale(1.03);
+  box-shadow: 0 6px 20px grey;
+}
+.team-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+.team-card h4 {
+  margin: 10px 0 5px 0;
+  color: #333;
+  font-size: 1.15rem;
+}
+.team-card p {
+  color: #666;
+  font-size: 1rem;
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  .team-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-container {
+    padding: 0 5px;
+  }
+
+  #main {
+    width: 100%;
+    float: none;
+  }
+
+  #sidebar {
+    width: 100px;
+    float: none;
+  }
+}
